@@ -4,6 +4,6 @@
  <img src="https://i.imgur.com/8pPT8As.png" />
 </p>
 
-<h2>Live site: https://jack-lp.github.io/Card-Preview/</h2>
+<h2>Live site: https://jack-lp.github.io/Card-preview/</h2>
 
 ---
