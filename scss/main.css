@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0d192b;
+  height: 100vh;
+  font-family: Outfit, sans-serif;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 35rem;
+  margin: 0 auto;
+  background-color: #14253d;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 10px 7px 25px 3px rgba(0, 0, 0, 0.35);
+          box-shadow: 10px 7px 25px 3px rgba(0, 0, 0, 0.35);
+}
+
+.container .img-preview {
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+
+.container .description-section {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.container .description-section h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container .description-section h1:hover {
+  color: #00fcfa;
+}
+
+.container .description-section .description {
+  font-size: 1.8rem;
+  color: #8ca1c0;
+  font-weight: 300;
+}
+
+.container .price-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .price-section .eth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  color: #00fcfa;
+}
+
+.container .price-section .time-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  color: #8ca1c0;
+}
+
+.container .avatar-section {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  border-top: 1px solid #2f415b;
+  padding-top: 1rem;
+}
+
+.container .avatar-section img {
+  height: auto;
+  width: 4rem;
+  border: 2px solid #2f415b;
+  border-radius: 50%;
+}
+
+.container .avatar-section p {
+  font-size: 1.5rem;
+  color: #8ca1c0;
+}
+
+.container .avatar-section p span {
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .avatar-section p span:hover {
+  color: #00fcfa;
+}
+/*# sourceMappingURL=main.css.map */

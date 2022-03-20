@@ -1,0 +1,103 @@
+@import "variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $mainBG;
+  height: 100vh;
+  font-family: $bodyFont;
+  color: $white;
+  display: grid;
+  place-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 35rem;
+  margin: 0 auto;
+  background-color: $cardBG;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 7px 25px 3px rgba(0, 0, 0, 0.35);
+  .img-preview {
+    border-radius: 0.7rem;
+    cursor: pointer;
+  }
+  .description-section {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h1 {
+      font-size: $bodySize;
+      font-weight: $heavyWeight;
+      cursor: pointer;
+      &:hover {
+        color: $ethColor;
+      }
+    }
+    .description {
+      font-size: $bodySize;
+      color: $lightGrey;
+      font-weight: $lightWeight;
+    }
+  }
+  .price-section {
+    display: flex;
+    margin-top: 2rem;
+    font-size: $smallSize;
+    font-weight: $heavyWeight;
+    align-items: center;
+    justify-content: space-between;
+    .eth {
+      display: flex;
+      gap: 0.5rem;
+      color: $ethColor;
+    }
+    .time-left {
+      display: flex;
+      gap: 0.5rem;
+      color: $lightGrey;
+    }
+  }
+  .avatar-section {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: 1px solid $line;
+    padding-top: 1rem;
+    img {
+      height: auto;
+      width: 4rem;
+      border: 2px solid $line;
+      border-radius: 50%;
+    }
+    p {
+      font-size: $smallSize;
+      color: $lightGrey;
+      span {
+        color: $white;
+        cursor: pointer;
+        &:hover {
+          color: $ethColor;
+        }
+      }
+    }
+  }
+}
